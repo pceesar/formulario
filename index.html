@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar cadastros</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<header>
+    <nav>
+        <div class="botoes">
+            <button id="btnCadastro">Cadastrar</button>
+            <button id="btnConsultar">Consultar Cadastros</button>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section class="cadastrar">
+        <div id="cadastroSection">
+            <form id="cadastroForm">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="idade">Idade</label>
+                <input type="text" name="idade" id="idade">
+                <button type="submit" id="BtnCadastro">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="consultar">
+        <div id="consultaSection" style="display:none;">
+            <table id="tabela">
+                <tr id="linha">
+                    <th id="nome">NOME</th>
+                    <th id="idade">IDADE</th>
+                </tr>
+                
+            </table>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
