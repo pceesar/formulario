@@ -21,11 +21,14 @@
         <div id="cadastroSection">
             <form id="cadastroForm">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
                 <label for="idade">Idade</label>
-                <input type="text" name="idade" id="idade">
+                <input  type="text" name="idade" id="idade" required oninput="onlyNumber('idade')">
                 <button type="submit" id="BtnCadastro">Cadastrar</button>
             </form>
+            <div id="mensagem-cadastro">   
+                
+            </div>
         </div>
     </section>
 
